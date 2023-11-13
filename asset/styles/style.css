@@ -130,7 +130,6 @@ body{
 }
 .table a:hover{
     color: var(--surface4);
-    font-size: 17px;
 }
 .navigation{
     display: flex;
@@ -286,68 +285,124 @@ body{
     margin: auto auto 100px auto;
     padding: 0px 24px 0px 20px;
 }
-.part-1-services{
-    display: flex;
-    flex-direction: column;
-    max-width: 1280px;  
-    margin: auto;
-}
-.canaper-services{
-    width: calc(300px - 6px);
-    height: 180px;
-    text-align: center;
-    border-left: 3px solid var(--surface1);
-    border-bottom: 3px solid var(--surface1);
-    border-right: 3px solid var(--surface1);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
-.canaper-services h2{
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.canaper-services p{
-    margin-bottom: 10px;
-}
-.img-services{
-    width: 300px;
-    height: 180px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-.mon-bouton-services {
-    border: none;
-    padding: 10px 20px; 
-    cursor: pointer; 
-    font-size: 16px; 
-    margin-bottom: 15px;
-}
-
-.mon-bouton-services:hover {
-    background-color: #473406; 
-    color: #fff;
-}
-.mon-bouton-services a{
-    text-decoration: none;
-    color: var(--surface2);
-}
-.mon-bouton-services a:hover{
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .line-services{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap:25px ;
-    justify-content: space-between;
-    margin-bottom: 35px;
+    gap: 16px;
 }
-.part-1-services{
-    margin: 0px;
+.carte {
+    max-width: 330px;
+    height: 430px;
+    background: #f1f1f1;
+    display: grid;
+    grid-template-rows: 200px 50px 100px 50px;
+    border-radius: 5px;
+    margin-bottom:30px ;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
 }
 
+.divImg {
+    /* debut rangée / debut col / fin rang / fin col */
+    background: url(../images/salon/service-salon-300x180.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);
+    
+}
+.divImgLit {
+    /* debut rangée / debut col / fin rang / fin col */
+    
+    background: url(../images/lit/panneau-pour-chambre-caractéristiques-différentes-options-rembourrage.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);
+    
+}
+.divImgLustre {
+    /* debut rangée / debut col / fin rang / fin col */
+    
+    background: url(../images/lustre/lustre-services.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);
+    
+}
+.divImgHousse {
+    /* debut rangée / debut col / fin rang / fin col */
+    
+    background: url(../images/salon/service-housse-300x180.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);
+    
+}
+.divImgTapie {
+    /* debut rangée / debut col / fin rang / fin col */
+    
+    background: url(../images/tapie/service-tapie-300x180.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);
+    
+}
+.divImgDeco {
+    /* debut rangée / debut col / fin rang / fin col */
+ 
+    background: url(../images/deco/service-deco-300x180.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(90%);
+    
+}
+
+.titre {
+    display: flex;
+    align-self: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.icone {
+    width: 24px;
+    margin-right: 10px;
+}
+span {
+    font-weight: 600;
+}
+.info {
+
+    padding: 5px 25px;
+    font-size: 14px;
+}
+.btnSection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSection a {
+    display: block;
+    width: 200px;
+    height: 30px;
+    background: var(--surface2);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e2e2e2;
+    border-radius: 5px;
+}
+.btnSection a:hover {
+    background: var(--surface3);
+}
 .text-why {
     
     height: auto; 
@@ -642,7 +697,11 @@ footer{
         max-width: 768px;
     }
     .part-1-services{
-        max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+    margin: auto;
+    max-width: 40%;
     }
     
     .line-services{
